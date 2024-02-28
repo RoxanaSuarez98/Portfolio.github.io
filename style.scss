@@ -196,8 +196,27 @@ a {
     display: none;
 }
 
+footer {
+    background-color: #1b014e69;
+    width: auto;
+    height: 100px;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.footer-cont {
+    align-items: center;
+    padding-top: 45px;
+    padding-right: 50px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: $primarycolor;
+}
+
 /* responsive */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
     .navbar {
         display: none;
@@ -272,7 +291,7 @@ a {
         color: #5537fd;
         font-weight: 400;
         transition: ease-out 0.5s;
-        
+
     }
 
     .portfolio {
@@ -324,5 +343,16 @@ a {
         margin-bottom: 70px;
     }
 
+    footer {
+        height: 200px;
+        width: auto;
+    }
+
+    .footer-cont {
+        flex-wrap: wrap;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: center;
+    }
 
 }
