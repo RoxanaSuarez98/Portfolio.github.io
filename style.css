@@ -11,9 +11,12 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #000000;
+}
+
 .hero {
   width: 100vw;
-  background-color: #000000;
 }
 
 h1 {
@@ -65,13 +68,13 @@ a {
 
 .portfolio {
   font-weight: bold;
-  color: black;
+  font-size: 120px;
+  color: #000000;
   /* Colore del testo */
   text-shadow: -1px -1px 0 #aa89ff, 1px -1px 0 #aa89ff, -1px 1px 0 #aa89ff, 1px 1px 0 #aa89ff;
 }
 
 .blocco3 {
-  background-color: #000000;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -188,6 +191,10 @@ a {
     left: 0;
     width: 100%;
   }
+  .header {
+    height: 70px;
+    padding-top: 0px;
+  }
   .header.show {
     display: flex;
     /* Mostra la header quando il menu è attivo */
@@ -200,11 +207,10 @@ a {
     color: #9fa1d1;
     float: right;
     position: fixed;
-    top: 2px;
+    top: -5px;
     right: 20px;
     border: none;
     background-color: none;
-    /* Mostra il menu hamburger su schermi più piccoli */
   }
   #menu {
     display: block;
@@ -233,15 +239,15 @@ a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: 200;
+    font-size: 25px;
   }
   #menu ul li a:hover {
     color: #5537fd;
-    font-weight: 600;
+    font-weight: 400;
     transition: ease-out 0.5s;
-    font-size: 22px;
   }
-  h1 {
-    font-size: 60px;
+  .portfolio {
+    font-size: 80px;
   }
   img {
     max-width: 100%;
@@ -256,12 +262,6 @@ a {
   .content {
     padding-top: 50px;
   }
-  .img2 {
-    padding-top: 50px;
-    width: 300px;
-    height: auto;
-    max-width: 100%;
-  }
   h1,
   .linearità,
   .armonia,
@@ -269,10 +269,10 @@ a {
     font-size: 60px;
   }
   h2 {
-    font-size: 30px;
+    font-size: 40px;
   }
   h3 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .blocco4 {
     margin-top: -250px;

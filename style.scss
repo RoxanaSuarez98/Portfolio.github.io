@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 *,
@@ -10,12 +11,16 @@
     box-sizing: border-box;
 }
 
-$primarycolor: rgb(248, 255, 240);
 
+$primarycolor: rgb(248, 255, 240);
+$secondarycolor: #000000;
+
+body {
+    background-color: $secondarycolor;
+}
 
 .hero {
     width: 100vw;
-    background-color: #000000;
 }
 
 h1 {
@@ -35,7 +40,6 @@ h2,
 h3,
 h4,
 p {
-
     color: $primarycolor;
 }
 
@@ -44,9 +48,6 @@ p {
     margin-top: 100px;
     margin-right: 50px;
 }
-
-
-
 
 a {
     text-decoration: none;
@@ -68,13 +69,13 @@ a {
     position: sticky;
     top: 0;
     overflow: hidden;
-
 }
 
 .portfolio {
 
     font-weight: bold;
-    color: black;
+    font-size: 120px;
+    color: $secondarycolor;
     /* Colore del testo */
     text-shadow:
         -1px -1px 0 #aa89ff,
@@ -85,17 +86,15 @@ a {
 }
 
 .blocco3 {
-    background-color: #000000;
+
     height: 100vh;
     width: 100vw;
     display: flex;
     padding-left: 50px;
-
 }
 
 .content {
     padding-top: 300px;
-
 }
 
 .elemento {
@@ -105,7 +104,6 @@ a {
     width: 45px;
     height: auto;
     left: 20px;
-    
     position: sticky;
 }
 
@@ -114,7 +112,7 @@ a {
     height: auto;
     left: 20px;
     position: sticky;
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
 }
 
@@ -171,9 +169,7 @@ a {
 }
 
 .armonia {
-
     color: #6650e3;
-
 }
 
 .armonia-cont {
@@ -213,6 +209,11 @@ a {
         width: 100%;
     }
 
+    .header {
+        height: 70px;
+        padding-top: 0px;
+    }
+
     .header.show {
         display: flex;
         /* Mostra la header quando il menu è attivo */
@@ -226,12 +227,10 @@ a {
         color: #9fa1d1;
         float: right;
         position: fixed;
-        top: 2px;
+        top: -5px;
         right: 20px;
         border: none;
         background-color: none;
-        /* Mostra il menu hamburger su schermi più piccoli */
-
     }
 
     #menu {
@@ -265,18 +264,21 @@ a {
         color: rgb(255, 255, 255);
         text-decoration: none;
         font-weight: 200;
+        font-size: 25px;
+
     }
 
     #menu ul li a:hover {
         color: #5537fd;
-        font-weight: 600;
+        font-weight: 400;
         transition: ease-out 0.5s;
-        font-size: 22px;
+        
     }
 
-    h1 {
-        font-size: 60px;
+    .portfolio {
+        font-size: 80px;
     }
+
 
     img {
         max-width: 100%;
@@ -286,54 +288,41 @@ a {
     .blocco3 {
         flex-wrap: wrap;
         max-width: 100%; // da controllare , serve per far resp //
-
         align-items: center center;
         flex-direction: column;
-
     }
 
     .content {
         padding-top: 50px;
-
     }
 
-    .img2 {
-        padding-top: 50px;
-        width: 300px;
-        height: auto;
-        max-width: 100%; 
-
+    h1,
+    .linearità,
+    .armonia,
+    .minimal {
+        font-size: 60px;
     }
 
-    
-h1,
-.linearità,
-.armonia,
-.minimal {
-    font-size: 60px;
-}
+    h2 {
+        font-size: 40px;
+    }
 
-h2 {
-    font-size: 30px;
-}
+    h3 {
+        font-size: 30px;
+    }
 
-h3 {
-    font-size: 20px;
-    
-}
+    .blocco4 {
+        margin-top: -250px;
+        padding-bottom: 50px;
+    }
 
-.blocco4 {
- margin-top: -250px;
- padding-bottom: 50px;
-}
-
-.armonia-cont {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    margin-top: 70px;
-    margin-bottom: 70px;
-}
+    .armonia-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
 
 
 }
